@@ -1,4 +1,4 @@
-run:
+run: build
 	./run.sh
 
 stop:
