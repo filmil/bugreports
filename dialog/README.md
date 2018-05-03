@@ -21,7 +21,7 @@ make run
 
 Result is below.
 
-(baseline.png)
+![issue1](baseline.png)
 
 Now do the same within a `screen` session.
 
@@ -33,5 +33,5 @@ make run
 
 Result is below.
 
-(with-screen.png)
+![issue2](with-screen.png)
 
