@@ -31,7 +31,8 @@ screen
 make run
 ```
 
-Result is below.
+Result is below.  Note how the terminal is not fully painted.  This looks
+problematic.
 
 ![issue2](with-screen.png)
 
