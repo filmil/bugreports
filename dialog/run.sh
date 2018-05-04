@@ -1,8 +1,8 @@
 #! /bin/bash
 set -x
 docker run --rm --interactive --tty  \
-		-e "TERM=xterm" \
+		-e "TERM=screen" \
 		dialog:latest \
 		bash -c " \
-		TERM=xterm dialog --msgbox \"TERM=$TERM\" 30 60"
+		TERM=screen dialog --msgbox \"TERM=$TERM\" 30 60"
 

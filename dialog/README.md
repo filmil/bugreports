@@ -1,3 +1,6 @@
+**Update:** Setting `TERM=screen` before running `dialog` removes the issue, 
+to seemingly no ill-effect to other terminals.  Good.
+
 This is an issue I'm having with running dialog utility inside
 a docker container.
 
