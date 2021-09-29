@@ -23,7 +23,7 @@ func main() {
 	defer cancel()
 	if err := cdp.Run(ctx,
 		cdp.Navigate(`chrome://settings/content/location`),
-		cdp.SendKeys(`input`, "hello", cdp.ByID),
+		cdp.SendKeys(`#input`, "hello"),
 	); err != nil && !strings.Contains(err.Error(), "net::ERR_ABORTED") {
 		log.Fatal(err)
 	}
