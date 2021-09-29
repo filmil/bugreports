@@ -11,4 +11,5 @@ go ./chromedp/settings
 ## Prerequisites
 
 * Needs a Chromium or Chrome browser in the `$PATH`.
+* Needs a go toolchain installed.
 
