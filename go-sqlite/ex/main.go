@@ -38,8 +38,7 @@ func GetAnn(db *sql.DB) (string, error) {
 	r, err := db.Query(`
 		SELECT		Field
 		FROM		Table1
-		;
-	`)
+		;`)
 	if err != nil {
 		return "", fmt.Errorf("while query: %w", err)
 	}
