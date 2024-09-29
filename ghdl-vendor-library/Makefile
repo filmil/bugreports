@@ -1,14 +1,14 @@
-v: work unisim
-	ghdl --synth --out=verilog --work=work --vendor-library=unisim demo
+v: work-obj08.cf unisim-obj08.cf
+	ghdl --synth --std=08 --out=verilog --work=work --vendor-library=unisim demo
 
-v2: work unisim
-	ghdl --synth --out=verilog --work=work demo
+v2: work-obj08.cf unisim-obj08.cf
+	ghdl --synth --std=08 --out=verilog --work=work demo
 
-work: file.vhdl unisim
-	ghdl -a --work=work $<
+work-obj08.cf: file.vhdl unisim-obj08.cf
+	ghdl -a --std=08 --work=work $<
 
-unisim: fake_unisim.vhdl
-	ghdl -a --work=unisim $<
+unisim-obj08.cf: fake_unisim.vhdl
+	ghdl -a --std=08 --work=unisim $<
 
 clean:
 	rm -fr *.cf
